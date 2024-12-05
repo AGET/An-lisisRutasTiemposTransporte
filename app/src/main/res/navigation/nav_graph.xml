@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PanelFragment">
+
+    <fragment
+        android:id="@+id/PanelFragment"
+        android:name="com.example.anlisisrutastiempostransporte.ui.panel.PanelFragment"
+        android:label="@string/panel_fragment"
+        tools:layout="@layout/fragment_panel">
+
+        <action
+            android:id="@+id/action_PanelFragment_to_ItineraryFragment"
+            app:destination="@id/ItineraryFragment" />
+
+        <action
+            android:id="@+id/action_PanelFragment_to_StationRegister"
+            app:destination="@id/StationRegister" />
+        <action
+            android:id="@+id/action_PanelFragment_to_ListStationsFragment"
+            app:destination="@id/ListStationsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ItineraryFragment"
+        android:name="com.example.anlisisrutastiempostransporte.ui.itinerary.ItineraryFragment"
+        android:label="@string/itinerary"
+        tools:layout="@layout/fragment_itinerary">
+
+        <!--<argument
+            android:name="price"
+            app:argType="Double"
+            app:nullable="true"/>
+
+        <argument
+            android:name="speed"
+            app:argType="Double"
+            app:nullable="true"/>
+        <argument
+            android:name="averageWaitingTime"
+            app:argType="Integer"
+            app:nullable="true"/>
+        <argument
+            android:name="starStation"
+            app:argType="com.example.anlisisrutastiempostransporte.domain.Station"
+            app:nullable="true"/>
+        <argument
+            android:name="endStation"
+            app:argType="com.example.anlisisrutastiempostransporte.domain.Station"
+            app:nullable="true"/>
+        <argument
+            android:name="stations"
+            app:argType="com.example.anlisisrutastiempostransporte.domain.Station[]"
+            app:nullable="true"/>-->
+
+        <argument
+            android:name="itineraryModel"
+            app:argType="com.example.anlisisrutastiempostransporte.presentation.itinerary.ItineraryModel" />
+
+
+        <action
+            android:id="@+id/action_ItineraryFragment_to_PanelFragment"
+            app:destination="@id/PanelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListStationsFragment"
+        android:name="com.example.anlisisrutastiempostransporte.ui.liststations.ListStationsFragment"
+        android:label="@string/current_stations"
+        tools:layout="@layout/fragment_list_stations">
+
+        <action
+            android:id="@+id/action_ListStationsFragment_to_PanelFragment"
+            app:destination="@id/PanelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StationRegister"
+        android:name="com.example.anlisisrutastiempostransporte.ui.register.StationRegisterFragment"
+        android:label="@string/station_register"
+        tools:layout="@layout/fragment_station_register">
+
+        <action
+            android:id="@+id/action_ItineraryFragment_to_PanelFragment"
+            app:destination="@id/PanelFragment" />
+    </fragment>
+
+
+    <!--    <dialog
+            android:id="@+id/ModalFragment"
+            android:name="com.example.anlisisrutastiempostransporte.ItemListDialogFragment"
+            android:label="Modal"
+            tools:layout="@layout/fragment_item_list_dialog_list_dialog">
+
+            <action
+                android:id="@+id/action_ItineraryFragment_to_PanelFragment"
+                app:destination="@id/PanelFragment" />
+        </dialog>-->
+</navigation>

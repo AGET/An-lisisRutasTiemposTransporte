@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AnálisisRutasTiemposTransporte</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="panel_fragment">Panel</string>
+    <string name="station_register_fragment_label">Registro de estación</string>
+    <string name="station_register">Registro de estaciones</string>
+    <string name="register_station">Agregar estación</string>
+    <string name="next">Next</string>
+    <string name="previous">Regresar</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="start_station">Estación inicial</string>
+    <string name="end_station">Estación final</string>
+    <string name="price_hint">Costo por km a recorrer</string>
+    <string name="waiting_time_station">Tiempo de espera por estación</string>
+    <string name="calculate">Calcular itinerario</string>
+    <string name="current_stations">Estaciones existentes</string>
+    <string name="average_speed">Velocidad promedio</string>
+    <string name="itinerary">Itinerario</string>
+    <string name="add_station">Agregar estación</string>
+    <string name="distance_description">Distancia en KM respecto a la terminal \'A\'</string>
+    <string name="distance_help_text">Se considera que cada estación agregada tiene una distancia con respecto al punto inicial</string>
+    <string name="registry_title_label">Registre una nueva estación para poder seleccionarla en el panel</string>
+    <string name="name_description">Descripción de la estación</string>
+    <string name="show_stations">Ver estaciones</string>
+    <string name="list_stations_body">Estaciones ordenadas por distancia</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="rechazar">Rechazar</string>
+    <string name="velocidad_del_tren">Velocidad del tren</string>
+    <string name="tiempo_considerando_tiempos_de_espera">Tiempo considerando tiempos de espera</string>
+    <string name="costo_total">Costo total</string>
+    <string name="n_mero_de_estaciones_recorridas">Número de estaciones recorridas</string>
+    <string name="distancia_recorrida">Distancia recorrida</string>
+    <string name="estaci_n_final">Estación final</string>
+    <string name="estaci_n_inicial">Estación inicial</string>
+    <string name="option_is_blocked_in_this_section">Option is blocked in this section</string>
+    <string name="home">Home</string>
+</resources>
